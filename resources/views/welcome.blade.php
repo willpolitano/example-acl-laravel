@@ -7,5 +7,11 @@
 </head>
 <body>
     <h2>EXMAPLE ACL LARAVEL</h2>
+
+    <ul>
+        @foreach($users as $user)
+            <li>{{ $user->name }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
