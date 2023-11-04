@@ -6,13 +6,13 @@
     <title>ACL LARAVEL</title>
 </head>
 <body>
-    <h2>CONVIDADOS</h2>
+    <h2>ADMINISTRADOR</h2>
 
-    @can('create.guest')
-        <a href="">Create Guest</a>
+    @can('create.admin')
+        <a href="">Create Admin</a>
     @endcan
 
-    @can('list.guest')
+    @can('list.admin')
         <ul>
             @foreach($users as $user)
                 <li>{{ $user->name }}</li>
